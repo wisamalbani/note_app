@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/auth/signup.dart';
-import 'package:note_app/home/homepage.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
