@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/auth/login.dart';
 import 'package:note_app/auth/signup.dart';
+import 'package:note_app/crud/addnotes.dart';
 import 'package:note_app/home/homepage.dart';
 
 void main() {
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
           "login": (context) => Login(),
           "signup": (context) => Signup(),
           "homepage": (context) => HomePage(),
+          "addnotes": (context) => AddNotes(),
         });
   }
 }
