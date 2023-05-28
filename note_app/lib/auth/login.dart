@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/auth/signup.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -55,7 +56,9 @@ class _LoginState extends State<Login> {
                   children: [
                     Text("if you don't have an account  "),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).pushNamed("signup");
+                      },
                       child: Text(
                         "Click Here",
                         style: TextStyle(color: Colors.blue),
@@ -73,7 +76,7 @@ class _LoginState extends State<Login> {
                   onPressed: () {},
                   child: Text(
                     "تسجيل الدخول",
-                    style: TextStyle(fontSize: 20),
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                 ),
               ),

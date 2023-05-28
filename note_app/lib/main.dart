@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/auth/login.dart';
+import 'package:note_app/auth/signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Login(),
-        routes: {"login": (context) => Login()});
+        theme: ThemeData(
+          primaryColor: Colors.blue,
+          buttonTheme: ButtonThemeData(buttonColor: Colors.blue),
+          textTheme: TextTheme(
+              headline6: TextStyle(fontSize: 20, color: Colors.white)),
+        ),
+        routes: {
+          "login": (context) => Login(),
+          "signup": (context) => Signup(),
+        });
   }
 }
