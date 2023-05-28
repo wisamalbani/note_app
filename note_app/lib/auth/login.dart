@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/auth/signup.dart';
+import 'package:note_app/home/homepage.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -73,7 +74,9 @@ class _LoginState extends State<Login> {
                     backgroundColor: MaterialStatePropertyAll(Colors.blue),
                     foregroundColor: MaterialStateProperty.all(Colors.white),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed("homepage");
+                  },
                   child: Text(
                     "تسجيل الدخول",
                     style: Theme.of(context).textTheme.headline6,

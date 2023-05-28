@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/auth/login.dart';
 import 'package:note_app/auth/signup.dart';
+import 'package:note_app/home/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         routes: {
           "login": (context) => Login(),
           "signup": (context) => Signup(),
+          "homepage": (context) => HomePage(),
         });
   }
 }
