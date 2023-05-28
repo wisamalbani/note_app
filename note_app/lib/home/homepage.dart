@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List notes = [
     {
-      "note": "whhh 1 wqwerfw erkljgvnsekfm ksn",
+      "note": "whhh 1 wqwerfw erkljgvnsekfm ksn1",
       "image": "1.jpg",
     },
     {
