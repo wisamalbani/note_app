@@ -34,6 +34,16 @@ class _SignupState extends State<Signup> {
               TextFormField(
                 obscureText: obscurepass,
                 decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.email),
+                    hintText: "email",
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(width: 1),
+                    )),
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                obscureText: obscurepass,
+                decoration: InputDecoration(
                     suffixIcon: InkWell(
                       child: Icon(obscurepass
                           ? Icons.visibility
