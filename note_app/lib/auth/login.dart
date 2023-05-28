@@ -8,6 +8,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  bool obscurepass = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,8 +31,18 @@ class _LoginState extends State<Login> {
               ),
               SizedBox(height: 20),
               TextFormField(
-                obscureText: true,
+                obscureText: obscurepass,
                 decoration: InputDecoration(
+                    suffixIcon: InkWell(
+                      child: Icon(obscurepass
+                          ? Icons.visibility
+                          : Icons.visibility_off),
+                      onTap: () {
+                        setState(() {
+                          obscurepass = !obscurepass;
+                        });
+                      },
+                    ),
                     prefixIcon: Icon(Icons.password),
                     hintText: "password",
                     border: OutlineInputBorder(
