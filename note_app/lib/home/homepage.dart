@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/crud/addnotes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
